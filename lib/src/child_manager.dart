@@ -644,7 +644,7 @@ class AnimatedSliverMultiBoxAdaptorElement extends RenderObjectElement
   /// It creates an disposable off-list element built with the specified [widget],
   /// and executes the [callback]. Eventually, the child is disposed.
   void disposableElement(Widget widget, void Function(RenderBox) callback) {
-    owner!.lockState(() {
+    owner!.buildScope(this, () {
       _currentlyUpdatingChildIndex = null;
       _currentlyUpdatingPopUpList = null;
       _creatingDisposableElement = true;
