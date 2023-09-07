@@ -2,16 +2,16 @@ part of 'core.dart';
 
 /// Default duration of a dismiss or incoming animation.
 const Duration kDismissOrIncomingAnimationDuration =
-    Duration(milliseconds: 500);
+    Duration(milliseconds: 200); // Fade animation
 
 /// Default duration of a resizing animation.
-const Duration kResizeAnimationDuration = Duration(milliseconds: 500);
+const Duration kResizeAnimationDuration = Duration(milliseconds: 200);
 
 /// Default duration of a reordering animation.
-const Duration kReorderAnimationDuration = Duration(milliseconds: 250);
+const Duration kReorderAnimationDuration = Duration(milliseconds: 200);
 
 /// Default duration of a moving animation.
-const Duration kMovingAnimationDuration = Duration(milliseconds: 500);
+const Duration kMovingAnimationDuration = Duration(milliseconds: 200);
 
 /// Default curve of a dismiss or incoming animation.
 const Curve kDismissOrIncomingAnimationCurve = Curves.ease;
@@ -29,7 +29,7 @@ const Curve kMovingAnimationCurve = Curves.easeInOut;
 const double kDefaultAnimatedElevation = 10.0;
 
 /// Default duration of the [MorphTransition] effect.
-const Duration kDefaultMorphTransitionDuration = Duration(milliseconds: 500);
+const Duration kDefaultMorphTransitionDuration = Duration(milliseconds: 200);
 
 /// A delegate that supplies children for animated slivers.
 ///
